@@ -1,0 +1,31 @@
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\bin\Debug\MegaDesk.exe
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\bin\Debug\MegaDesk.exe.config
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.AddQuote.resources
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.DisplayQuote.resources
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.MainMenu.resources
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.Properties.Resources.resources
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.SearchQuotes.resources
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.ViewAllQuotes.resources
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.csproj.GenerateResource.cache
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.csproj.CoreCompileInputs.cache
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.exe
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.pdb
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\bin\Debug\MegaDesk.pdb
+C:\Users\iliak\source\repos\MegaDesk\MegaDesk\obj\Debug\MegaDesk.csprojAssemblyReference.cache
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\bin\Debug\MegaDesk.exe.config
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\bin\Debug\MegaDesk.exe
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\bin\Debug\MegaDesk.pdb
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.csprojAssemblyReference.cache
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.AddQuote.resources
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.DisplayQuote.resources
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.MainMenu.resources
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.Properties.Resources.resources
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.SearchQuotes.resources
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.ViewAllQuotes.resources
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.csproj.GenerateResource.cache
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.csproj.CoreCompileInputs.cache
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.exe
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.pdb
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\bin\Debug\Newtonsoft.Json.dll
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\bin\Debug\Newtonsoft.Json.xml
+C:\Users\iliak\source\repos\MegaDesk 2.0\MegaDesk\obj\Debug\MegaDesk.csproj.CopyComplete
