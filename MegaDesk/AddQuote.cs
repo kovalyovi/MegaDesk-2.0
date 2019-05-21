@@ -14,12 +14,6 @@ namespace MegaDesk
     public partial class AddQuote : Form
     {
         private Form _mainMenu;
-        private String fullName;
-        private int numDrawers;
-        private float depth;
-        private float width;
-        private String material;
-        private String rushOption;
         private String orderPath;
 
         public AddQuote(Form mainMenu)
@@ -73,18 +67,8 @@ namespace MegaDesk
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            var my_quote = new DeskQuote
-            {
-                CustomerName = fullNameBox.Text,
-                ShippingType = rushOptionsForm.Text,
-                Desk = new Desk
-                {
-                    Width = (float)numWidthForm.Value,
-                    Depth = (float)numDepthForm.Value,
-                    NumberOfDrawers = Decimal.ToInt16(numDrawersForm.Value),
-                    SurfaceMaterial = materialForm.Text
-                }
-            };
+            var my_desk = new Desk((float)numWidthForm.Value, (float)numDepthForm.Value, Decimal.ToInt16(numDrawersForm.Value), materialForm.Text);
+            var my_quote = new DeskQuote(fullNameBox.Text, rushOptionsForm.Text, my_desk, DateTime.Now);
 
             var json_my_quote = Newtonsoft.Json.JsonConvert.SerializeObject(my_quote);
             File.AppendAllText(orderPath, json_my_quote);

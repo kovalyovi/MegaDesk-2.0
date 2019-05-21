@@ -1,2 +1,4 @@
-{"CustomerName":"sergey","ShippingType":"regular","QuotePrice":200.0,"Desk":{"Width":33.0,"Depth":24.0,"NumberOfDrawers":2,"SurfaceMaterial":"rosewood"},"Date":"0001-01-01T00:00:00"}
+{"CustomerName":"sergey","ShippingType":"regular","QuotePrice":588.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":0,"SurfaceMaterial":"laminate"},"Date":"2019-05-21T10:41:14.8122471-06:00"}
+
+{"CustomerName":"sergey2","ShippingType":"regular","QuotePrice":300.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":0,"SurfaceMaterial":"laminate"},"Date":"2019-05-21T10:43:05.4389217-06:00"}
 
