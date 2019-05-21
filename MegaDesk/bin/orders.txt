@@ -1,2 +1,6 @@
-{"CustomerName":"Sergii","ShippingType":"7 days","QuotePrice":200.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":2,"SurfaceMaterial":"veneer"},"Date":"0001-01-01T00:00:00"}
+{"CustomerName":"asdf","ShippingType":"5 days","QuotePrice":400.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":0,"SurfaceMaterial":"oak"},"Date":"2019-05-21T10:53:03.5144445-06:00"}
+
+{"CustomerName":"lalala","ShippingType":"3 days","QuotePrice":450.0,"Desk":{"Width":24.2,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":"oak"},"Date":"2019-05-21T10:53:11.673261-06:00"}
+
+{"CustomerName":"asdfasfsdf","ShippingType":"5 days","QuotePrice":450.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":"oak"},"Date":"2019-05-21T10:55:13.85171-06:00"}
 
