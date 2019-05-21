@@ -1,2 +1,2 @@
-{"CustomerName":"sergey","ShippingType":"regular","QuotePrice":200.0,"Desk":{"Width":33.0,"Depth":24.0,"NumberOfDrawers":2,"SurfaceMaterial":"rosewood"},"Date":"0001-01-01T00:00:00"}
+{"CustomerName":"Sergii","ShippingType":"7 days","QuotePrice":200.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":2,"SurfaceMaterial":"veneer"},"Date":"0001-01-01T00:00:00"}
 

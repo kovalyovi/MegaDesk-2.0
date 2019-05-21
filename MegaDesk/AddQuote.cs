@@ -14,12 +14,6 @@ namespace MegaDesk
     public partial class AddQuote : Form
     {
         private Form _mainMenu;
-        private String fullName;
-        private int numDrawers;
-        private float depth;
-        private float width;
-        private String material;
-        private String rushOption;
         private String orderPath;
 
         public AddQuote(Form mainMenu)
