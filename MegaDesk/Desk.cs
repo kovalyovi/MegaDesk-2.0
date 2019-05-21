@@ -19,9 +19,12 @@ namespace MegaDesk
             wood = 2
         }
 
-        public Desk()
+        public Desk(float width, float depth, int numberOfDrawers, string surfaceMaterial)
         {
-
+            this.Width = width;
+            this.Depth = depth;
+            this.NumberOfDrawers = numberOfDrawers;
+            this.SurfaceMaterial = surfaceMaterial;
         }
 
         public float getArea()

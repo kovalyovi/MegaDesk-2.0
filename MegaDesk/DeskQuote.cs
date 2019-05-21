@@ -15,20 +15,22 @@ namespace MegaDesk
         public Desk Desk;
         public DateTime Date;
 
-        public DeskQuote()
+        public DeskQuote(string customerName, string shippingType, Desk desk, DateTime date)
         {
-            Desk = new Desk();
-            Date = new DateTime();
+            this.CustomerName = customerName;
+            this.ShippingType = shippingType;
+            this.Desk = desk;
+            this.Date = date;
             QuotePrice = GetQuote();
         }
 
         private double GetQuote()
         {
-            float area = Desk.getArea();
-            float extraArea = area > 1000 ? (area - 1000) * 1 : area;
+            float area = this.Desk.getArea();
+            float extraArea = area > 1000 ? (area - 1000) * 1 : 0;
             int materialCost;
 
-            switch (Desk.SurfaceMaterial)
+            switch (this.Desk.SurfaceMaterial)
             {
                 case "oak":
                     materialCost = 200;
@@ -56,7 +58,7 @@ namespace MegaDesk
             int rushOrderPrice;
             if (area < 1000)
             {
-                switch(ShippingType)
+                switch(this.ShippingType)
                 {
                     case "3 day":
                         rushOrderPrice = int.Parse(priceList[0]);
@@ -74,7 +76,7 @@ namespace MegaDesk
             }
             else if (area < 2000)
             {
-                switch (ShippingType)
+                switch (this.ShippingType)
                 {
                     case "3 day":
                         rushOrderPrice = int.Parse(priceList[3]);
@@ -92,7 +94,7 @@ namespace MegaDesk
             }
             else
             {
-                switch (ShippingType)
+                switch (this.ShippingType)
                 {
                     case "3 day":
                         rushOrderPrice = int.Parse(priceList[6]);
