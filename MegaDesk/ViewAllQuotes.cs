@@ -29,9 +29,8 @@ namespace MegaDesk
         void displayGrid()
         {
             fillData();
-            viewOfQuotes.AutoSize = true;
-            _mainMenu.AutoSize = true;
             viewOfQuotes.DataSource = ToDataTable(quotes);
+            viewOfQuotes.AutoSize = true;
             Controls.Add(viewOfQuotes);
         }
 
@@ -57,17 +56,6 @@ namespace MegaDesk
         DataTable ToDataTable(List<DeskQuote> orders)
         {
             DataTable table = new DataTable();
-            //using (var reader = ObjectReader.Create(orders))
-            //{
-            //    try
-            //    {
-            //        table.Load(reader);
-            //    }
-            //    catch (Exception e)
-            //    {
-            //        MessageBox.Show(e.ToString());
-            //    }
-            //}
             table.Columns.Add("CustomerName");
             table.Columns.Add("DeskWidth");
             table.Columns.Add("DeskDepth");
@@ -84,7 +72,7 @@ namespace MegaDesk
                 row["DeskDepth"] = item.Desk.Depth.ToString();
                 row["NumberOfDrawers"] = item.Desk.NumberOfDrawers.ToString();
                 row["SurafaceMaterial"] = item.Desk.SurfaceMaterial.ToString();
-                row["QuotePrice"] = item.QuotePrice.ToString();
+                row["QuotePrice"] = item.QuotePrice.ToString("C2");
                 row["ShippingType"] = item.ShippingType.ToString();
                 row["Date"] = item.Date.ToString("MM/dd/yy");
                 table.Rows.Add(row);
