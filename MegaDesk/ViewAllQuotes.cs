@@ -15,8 +15,8 @@ namespace MegaDesk
     public partial class ViewAllQuotes : Form
     {
         private Form _mainMenu;
-        private DataGridView viewOfQuotes = new DataGridView();
-        private List<DeskQuote> quotes = new List<DeskQuote>();
+        DataGridView viewOfQuotes = new DataGridView();
+        List<DeskQuote> quotes = new List<DeskQuote>();
 
         public ViewAllQuotes(Form mainMenu)
         {
