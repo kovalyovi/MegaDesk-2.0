@@ -1,6 +1,40 @@
+﻿{"CustomerName":"asdf","ShippingType":"5 days","QuotePrice":400.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":0,"SurfaceMaterial":"oak"},"Date":"2019-05-21T10:53:03.5144445-06:00"}
+
+{"CustomerName":"lalala","ShippingType":"3 days","QuotePrice":450.0,"Desk":{"Width":24.2,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":"oak"},"Date":"2019-05-21T10:53:11.673261-06:00"}
+
+{"CustomerName":"asdfasfsdf","ShippingType":"5 days","QuotePrice":450.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":"oak"},"Date":"2019-05-21T10:55:13.85171-06:00"}
+
+{"CustomerName":"Ilya Kovalyov","ShippingType":"5 days","QuotePrice":700.0,"Desk":{"Width":24.0,"Depth":12.2,"NumberOfDrawers":4,"SurfaceMaterial":"rosewood"},"Date":"2019-05-21T11:02:02.9525282-06:00"}
+
+{"CustomerName":"Серёга","ShippingType":"regular","QuotePrice":425.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":2,"SurfaceMaterial":"veneer"},"Date":"2019-05-21T11:03:47.208231-06:00"}
+
+{"CustomerName":"Ильюха","ShippingType":"5 days","QuotePrice":300.0,"Desk":{"Width":24.0,"Depth":33.0,"NumberOfDrawers":1,"SurfaceMaterial":"pine"},"Date":"2019-05-21T11:03:57.3489185-06:00"}
+
+{"CustomerName":"кто-то ещё","ShippingType":"5 days","QuotePrice":850.0,"Desk":{"Width":55.0,"Depth":12.0,"NumberOfDrawers":7,"SurfaceMaterial":"rosewood"},"Date":"2019-05-21T11:04:19.659156-06:00"}
+
+{"CustomerName":"аа","ShippingType":"","QuotePrice":250.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":""},"Date":"2019-05-21T11:04:22.4709688-06:00"}
+
+{"CustomerName":"авп","ShippingType":"7 days","QuotePrice":500.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":2,"SurfaceMaterial":"oak"},"Date":"2019-05-21T11:04:27.6143171-06:00"}
+
+{"CustomerName":"фуке","ShippingType":"3 days","QuotePrice":550.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":"rosewood"},"Date":"2019-05-21T11:04:33.5419786-06:00"}
+
 {"CustomerName":"asdf","ShippingType":"5 days","QuotePrice":400.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":0,"SurfaceMaterial":"oak"},"Date":"2019-05-21T10:53:03.5144445-06:00"}
 
 {"CustomerName":"lalala","ShippingType":"3 days","QuotePrice":450.0,"Desk":{"Width":24.2,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":"oak"},"Date":"2019-05-21T10:53:11.673261-06:00"}
 
 {"CustomerName":"asdfasfsdf","ShippingType":"5 days","QuotePrice":450.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":"oak"},"Date":"2019-05-21T10:55:13.85171-06:00"}
+
+{"CustomerName":"Ilya Kovalyov","ShippingType":"5 days","QuotePrice":700.0,"Desk":{"Width":24.0,"Depth":12.2,"NumberOfDrawers":4,"SurfaceMaterial":"rosewood"},"Date":"2019-05-21T11:02:02.9525282-06:00"}
+
+{"CustomerName":"Серёга","ShippingType":"regular","QuotePrice":425.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":2,"SurfaceMaterial":"veneer"},"Date":"2019-05-21T11:03:47.208231-06:00"}
+
+{"CustomerName":"Ильюха","ShippingType":"5 days","QuotePrice":300.0,"Desk":{"Width":24.0,"Depth":33.0,"NumberOfDrawers":1,"SurfaceMaterial":"pine"},"Date":"2019-05-21T11:03:57.3489185-06:00"}
+
+{"CustomerName":"кто-то ещё","ShippingType":"5 days","QuotePrice":850.0,"Desk":{"Width":55.0,"Depth":12.0,"NumberOfDrawers":7,"SurfaceMaterial":"rosewood"},"Date":"2019-05-21T11:04:19.659156-06:00"}
+
+{"CustomerName":"аа","ShippingType":"","QuotePrice":250.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":""},"Date":"2019-05-21T11:04:22.4709688-06:00"}
+
+{"CustomerName":"авп","ShippingType":"7 days","QuotePrice":500.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":2,"SurfaceMaterial":"oak"},"Date":"2019-05-21T11:04:27.6143171-06:00"}
+
+{"CustomerName":"фуке","ShippingType":"3 days","QuotePrice":550.0,"Desk":{"Width":24.0,"Depth":12.0,"NumberOfDrawers":1,"SurfaceMaterial":"rosewood"},"Date":"2019-05-21T11:04:33.5419786-06:00"}
 

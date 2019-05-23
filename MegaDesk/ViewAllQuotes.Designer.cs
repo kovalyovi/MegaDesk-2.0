@@ -32,9 +32,11 @@
             // 
             // ViewAllQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 261);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1962, 582);
+            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Name = "ViewAllQuotes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewAllQuotes";

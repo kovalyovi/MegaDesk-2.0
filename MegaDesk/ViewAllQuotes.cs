@@ -23,6 +23,8 @@ namespace MegaDesk
             InitializeComponent();
             _mainMenu = mainMenu;
             displayGrid();
+            viewOfQuotes.Controls[0].Enabled = true; 
+            viewOfQuotes.Controls[1].Enabled = true;
         }
 
         void displayGrid()

@@ -15,6 +15,8 @@ namespace MegaDesk
     {
         private Form _mainMenu;
         private String orderPath;
+        private List<string> materials;
+        private List<string> rushOptions;
 
         public AddQuote(Form mainMenu)
         {
@@ -23,13 +25,14 @@ namespace MegaDesk
             rushOptionsForm.BackColor = Color.White;
             materialForm.BackColor = Color.White;
 
-            string[] materials = File.ReadAllLines("../materials.txt");
+
+            materials = new List<string>(File.ReadAllLines("../materials.txt"));
             foreach (String m in materials)
             {
                 materialForm.Items.Add(m);
             }
 
-            string[] rushOptions = File.ReadAllLines("../rushOptions.txt");
+            rushOptions = new List<string>(File.ReadAllLines("../rushOptions.txt"));
             foreach (String ro in rushOptions)
             {
                 rushOptionsForm.Items.Add(ro);
@@ -45,10 +48,6 @@ namespace MegaDesk
             _mainMenu.Show();
         }
 
-        private void NumericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Label1_Click(object sender, EventArgs e)
         {
@@ -67,23 +66,46 @@ namespace MegaDesk
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            var my_desk = new Desk((float)numWidthForm.Value, (float)numDepthForm.Value, Decimal.ToInt16(numDrawersForm.Value), materialForm.Text);
-            var my_quote = new DeskQuote(fullNameBox.Text, rushOptionsForm.Text, my_desk, DateTime.Now);
+            if (String.IsNullOrEmpty(rushOptionsForm.Text) && String.IsNullOrEmpty(materialForm.Text) && String.IsNullOrEmpty(fullNameBox.Text))
+            {
+                MessageBox.Show("\"Rush options\", \"Materials\", and \"Full name\" cannot be empty!");
+            }
+            else if (String.IsNullOrEmpty(rushOptionsForm.Text) && String.IsNullOrEmpty(materialForm.Text))
+            {
+                MessageBox.Show("\"Rush options\" and \"Materials\" cannot be empty!");
+            }
+            else if (String.IsNullOrEmpty(rushOptionsForm.Text) && String.IsNullOrEmpty(fullNameBox.Text))
+            {
+                MessageBox.Show("\"Rush options\" and \"Full name\" cannot be empty!");
+            }
+            else if (String.IsNullOrEmpty(materialForm.Text) && String.IsNullOrEmpty(fullNameBox.Text))
+            {
+                MessageBox.Show("\"Materials\" and \"Full name\" cannot be empty!");
+            }
+            else if (String.IsNullOrEmpty(materialForm.Text))
+            {
+                MessageBox.Show("\"Materials\" cannot be empty!");
+            }
+            else if (String.IsNullOrEmpty(rushOptionsForm.Text))
+            {
+                MessageBox.Show("\"Rush options\" cannot be empty!");
+            }
+            else if (String.IsNullOrEmpty(fullNameBox.Text))
+            {
+                MessageBox.Show("\"Full name\" cannot be empty!");
+            }
+            else
+            {
+                var my_desk = new Desk((float)numWidthForm.Value, (float)numDepthForm.Value, Decimal.ToInt16(numDrawersForm.Value), materialForm.Text);
+                var my_quote = new DeskQuote(fullNameBox.Text, rushOptionsForm.Text, my_desk, DateTime.Now);
 
-            var json_my_quote = Newtonsoft.Json.JsonConvert.SerializeObject(my_quote);
-            File.AppendAllText(orderPath, json_my_quote);
-            File.AppendAllText(orderPath, "\n\n");
+                var json_my_quote = Newtonsoft.Json.JsonConvert.SerializeObject(my_quote);
+                File.AppendAllText(orderPath, json_my_quote);
+                File.AppendAllText(orderPath, "\n\n");
 
-            //fullName = fullNameBox.Text;
-            //numDrawers = Decimal.ToInt16(numDrawersForm.Value);
-            //depth = (float)numDepthForm.Value;
-            //width = (float)numWidthForm.Value;
-            //rushOption = rushOptionsForm.Text;
-            //material = materialForm.Text;
+                clearForms();
+            }
 
-            //Desk myDesk = new Desk(width, depth, numDrawers, material);
-            //DeskQuote myQuote = new DeskQuote(fullName, myDesk, rushOption);
-            clearForms();
         }
 
         private void clearForms()
@@ -108,8 +130,6 @@ namespace MegaDesk
         {
             _mainMenu.Show();
             Close();
-            // Close();
-            // _mainMenu.Show();
         }
 
         private void AddQuote_Load(object sender, EventArgs e)
@@ -120,17 +140,10 @@ namespace MegaDesk
         private void RushOptionsForm_Leave(object sender, EventArgs e)
         {
             bool result = false;
-            var rushOps = new List<String>
-            {
-                "3 days",
-                "5 days",
-                "7 days",
-                "regular"
-            };
 
-            foreach(String rushOp in rushOps)
+            foreach(String rushOption in rushOptions)
             {
-                if (rushOp.Equals(rushOptionsForm.Text))
+                if (rushOption.Equals(rushOptionsForm.Text))
                 {
                     result = true;
                 }
@@ -142,17 +155,10 @@ namespace MegaDesk
         private void MaterialForm_Leave(object sender, EventArgs e)
         {
             bool result = false;
-            var mats = new List<String>() {
-                "laminate",
-                "oak",
-                "rosewood",
-                "veneer",
-                "pine"
-            };
 
-            foreach (String mat in mats)
+            foreach (String material in materials)
             {
-                if (mat.Equals(materialForm.Text))
+                if (material.Equals(materialForm.Text))
                 {
                     result = true;
                 }
@@ -168,6 +174,17 @@ namespace MegaDesk
         private void AddQuote_FormClosed_1(object sender, FormClosedEventArgs e)
         {
             _mainMenu.Show();
+        }
+
+        private void NumDepthForm_Click(object sender, EventArgs e)
+        {
+            NumericUpDown depthForm = sender as NumericUpDown;
+
+            if (depthForm != null)
+            {
+                int lengthOfAnswer = depthForm.Value.ToString().Length;
+                depthForm.Select(0, lengthOfAnswer + 2);
+            }
         }
     }
 }
